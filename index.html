@@ -1,1 +1,28 @@
-<h1>Mock Service</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="data-spm" content="a311n">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="aplus-touch" content="1">
+	</head>
+
+	<body>
+		<h1>Mock Service</h1>
+		<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+		<script>
+			AV.initialize('ufsgslpkq3524vfegy2yzcxwsabdbqo88jgmlmgweggv7wq1', 'dadogz8amkh5mg6a024xoka3aj0run47pwatv7s7hw3nvvw6');
+			var TestObject = AV.Object.extend('TestObject');
+			var testObject = new TestObject();
+			testObject.save({
+			  foo: 'bar'
+			}, {
+			  success: function(object) {
+			    alert('LeanCloud works!');
+			  }
+			});
+		</script>
+	</body>
+</html>
